@@ -10,6 +10,7 @@
 		5A835FC32BC3033400CB192B /* dreamcatcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A835FC22BC3033400CB192B /* dreamcatcherApp.swift */; };
 		5A835FC52BC3033400CB192B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A835FC42BC3033400CB192B /* ContentView.swift */; };
 		5A835FC72BC3033500CB192B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A835FC62BC3033500CB192B /* Assets.xcassets */; };
+		5A8603432BC3078200994569 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8603422BC3078200994569 /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,8 @@
 		5A835FC22BC3033400CB192B /* dreamcatcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamcatcherApp.swift; sourceTree = "<group>"; };
 		5A835FC42BC3033400CB192B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A835FC62BC3033500CB192B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A8603422BC3078200994569 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		5A8603442BC30AA600994569 /* dreamcatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dreamcatcher.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +52,10 @@
 		5A835FC12BC3033400CB192B /* dreamcatcher */ = {
 			isa = PBXGroup;
 			children = (
+				5A8603442BC30AA600994569 /* dreamcatcher.entitlements */,
 				5A835FC22BC3033400CB192B /* dreamcatcherApp.swift */,
 				5A835FC42BC3033400CB192B /* ContentView.swift */,
+				5A8603422BC3078200994569 /* HealthKitManager.swift */,
 				5A835FC62BC3033500CB192B /* Assets.xcassets */,
 			);
 			path = dreamcatcher;
@@ -127,6 +132,7 @@
 			files = (
 				5A835FC52BC3033400CB192B /* ContentView.swift in Sources */,
 				5A835FC32BC3033400CB192B /* dreamcatcherApp.swift in Sources */,
+				5A8603432BC3078200994569 /* HealthKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +263,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dreamcatcher/dreamcatcher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We need access to your health records.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to your Health data stored on your Apple account.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to your health data for updates.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,11 +295,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dreamcatcher/dreamcatcher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We need access to your health records.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to your Health data stored on your Apple account.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to your health data for updates.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
